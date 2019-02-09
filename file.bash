@@ -1,10 +1,17 @@
 #!/bin/bash
-cd /root/git/sreerag
+location=/root/git/sreerag
 file=bc1.bash
-if [ -G $file ]
+today=`date '+%Y-%s-%s %H:%M:%S'`
+if [ -e $location ]
 then 
-	echo " pass"
-else  
-	echo "fail"
+	echo "Ok on the $location of the directory"
+	echo "Now checking on the file, $filename."
 fi
+if [ -e $location/$filei ]
+then 
+	echo "ok on the file name"
+	echo "update Current Date $today"
 
+else
+	echo " file doesnot exist"
+fi
