@@ -1,5 +1,5 @@
 #!/bin/bash
-testuser=root
-if [ $USER = $testuser ]
-then echo " the name of the user is $USER"
-fi
+for test in /home/sreerag/*
+do 
+	echo "this is my $test"
+done
