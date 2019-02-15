@@ -7,7 +7,7 @@ then
 	echo "Ok on the $location of the directory"
 	echo "Now checking on the file, $filename."
 fi
-if [ -e $location/$filei ]
+if [ -e $location/$file ]
 then 
 	echo "ok on the file name"
 	echo "update Current Date $today"
