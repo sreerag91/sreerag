@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: Install mcelog using yum 
+    yum:
+      name: mcelog
+      state: present
+
