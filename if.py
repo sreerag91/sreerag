@@ -1,6 +1,8 @@
-num1=100
-num2=500
-if num1>num2:
-    print("num1 i bigger than num2")
+num1 = 20
+num2 = 20
+if num1 > num2 :
+    print("num 1 is greater than num2")
+elif num2 > num1:
+    print("num2 is grater than num1")
 else:
-    print("num2 is bigger than num2")
+    print("both are equal")
