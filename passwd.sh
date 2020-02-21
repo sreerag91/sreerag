@@ -7,7 +7,7 @@ user=$USER
 echo $user
 one="root"
 if [ "$user" == "$one" ] ; 
-then passwd="iragecap"
+then passwd="pass"
 echo "$one:$passwd" | chpasswd 
 else
 echo "please use root user account"
