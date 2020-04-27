@@ -1,0 +1,14 @@
+---
+- hosts: test
+  become: yes
+  tasks:
+      - name: install php package and most common packages
+        yum: name= '{{ item }}' state=present
+        with_items:
+          - mod_php71w
+          - php71w-cli
+          - php71w-common
+          - php71w-mbstring
+          - php71w-mcrypt
+          - php71w-msqlnd
+          - php71w-xml 

@@ -1,25 +1,42 @@
-print("1.Balance \n 2.Widrow 3.Pin change")
-
-num = input("Please enter the number:")
-
-
-def widow
-#print("1.Balance \n 2.Widrow 3.Pin change")
-if len(str(num)) == 4:
-#   def Debit(num):
-   
-     notes = int(input("Only 100,500 and 2000\n"))
-     if notes == 100:
-        print(("{} money has been successfully debited").format(notes))
-     elif notes == 500:
-        print(("{} money has been successfully debited").format(notes))
-     elif notes == 2000:
-        print(("{} money has been successfully debited").format(notes))
-     else:
-        print("Sorry no more try")
-     
-#       deb(num)
+#def start():
+global cash
+#cash=int(input("Enter the amount to withdraw ,Please note that only 100,200,500 is available:\n").strip())
+pins =[1111,2222]
+pin = int(input("Please enter the pin number\n").strip())
+if (pin == pins[0] or pin == pins[1]):
+   choice=int(input("Enter 1 for withdraw or 2 for check balance:\n"))
+   if (choice == 1):
+      print("Your process is starting now")
+      withdraw()
+   elif(choice == 2):
+      print("wait")
+      balance()
+   else:
+      print("updating")
+      
 else:
-    print("Wrong pin typed")
+   print("incorrect pin")
 
-    
+def withdraw():
+   #global cash
+   cash=int(input("Enter the amount to withdraw ,Please note that only 100,200,500 is available:\n").strip())
+   if (cash == 100):
+      print("amount succefully debited is {}".format(cash))
+   elif (cash == 200):
+      print("amount succefully debited is {}".format(cash))
+   elif (cash == 500):
+      print("amount succefully debited is {}".format(cash))
+   else:
+      print("Sorry not available available")
+
+
+def balance():
+   cash = 1000 - cash
+   print("The balance is {}".format(cash))
+
+       
+#start()
+
+
+
+

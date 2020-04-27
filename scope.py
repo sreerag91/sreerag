@@ -1,10 +1,12 @@
-def spam():
-    eggs = 90
-    bacon()
-    print(eggs)
-def bacon():
-    eggs = 21
-    print(eggs)
+global a
+a = 250
+def f1():
+    a = 30
+    print(a)
+def f2():
+    print(a)
 
-spam()
-bacon()
+
+f1()
+f2()
+print(a)

@@ -1,0 +1,9 @@
+- hosts: all
+  become: yes
+  tasks:
+          - name: ensure that httpd is installed
+            yum :
+                    name: vsftpd
+                    state: present
+          - name: ensure the service is running
+            service: name=vsftpd state=started enabled=yes
