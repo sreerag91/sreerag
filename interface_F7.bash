@@ -13,7 +13,7 @@ do
 		do
 			
                         echo "echo from root@$list to  $i ";
-			ssh root@$list  ping -c 3 $i; 
+			ssh root@$list  ping -c $iteration $i; 
 			
 #                     echo "test print $i"; 
 		done
