@@ -20,12 +20,12 @@ do
 		echo -e "Exchange side connection of $list successful"
 	else
 		echo -e "Exchange side failed for $list" >> /root/text_AB_BSE_NSE_EXCG.txt
-		mail -s "Failed servers list" sreerag.s@iragecapital.com < /root/text_AB_BSE_NSE_EXCG.txt
+		mail -s "Failed servers list" sreerag.s.com < /root/text_AB_BSE_NSE_EXCG.txt
 	
 	fi
 	else
 		echo "lan failed" >> /root/text_lan_AB_NSE_BSE.txt
-                mail -s  "Failed servers list" sreerag.s@iragecapital.com < /root/text_lan_AB_NSE_BSE.txt
+                mail -s  "Failed servers list" sreerag.s.com < /root/text_lan_AB_NSE_BSE.txt
 	fi
 done
 ################################FOR AB20 NON BSE-NSE SERVERS CONNECTIVITY CHECKING #################################################
@@ -49,12 +49,12 @@ do
                 echo -e "Exchange side connection of $list successful"
         else
                 echo -e " $list Exchange side failed" >> /root/text_excg_AB20.txt
-                mail -s "$list Failed servers list" sreerag.s@iragecapital.com < /root/text_excg_AB20.txt
+                mail -s "$list Failed servers list" sreerag.s.com < /root/text_excg_AB20.txt
 
         fi
         else
                 echo " $list lan failed" >> /root/text_lan_AB20.txt
-                mail -s  " Failed servers list" sreerag.s@iragecapital.com < /root/text_lan_AB20.txt
+                mail -s  " Failed servers list" sreerag.s.com < /root/text_lan_AB20.txt
 
         fi
 done

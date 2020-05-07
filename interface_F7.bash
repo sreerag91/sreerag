@@ -22,11 +22,11 @@ do
 		echo -e "Exchange side connection of $list successful"
 	else
 		echo -e "$list Exchange side failed" > /root/text_f7_excg.txt
-	 mail -s "Failed servers list" sreerag.s@iragecapital.com < /root/text_f7_excg.txt
+	 mail -s "Failed servers list" sreerag.s@**.com < /root/text_f7_excg.txt
         fi
 	else
 		echo "$list lan failed " > /root/text_lan_f7.txt
-                mail -s "Failed servers list" sreerag.s@iragecapital.com < /root/text_lan_f7.txt
+                mail -s "Failed servers list" sreerag.s@****.com < /root/text_lan_f7.txt
 
 	fi
 done
