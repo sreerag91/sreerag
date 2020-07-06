@@ -4,6 +4,6 @@ response = os.system("ping -c 1 " + hostname)
 
 #and then check the response...
 if response == 0:
-  print hostname, 'is up!'
+  print("{} is up!".format(hostname))
 else:
-  print hostname, 'is down!'
+  print("{} is up!".format(hostname))
